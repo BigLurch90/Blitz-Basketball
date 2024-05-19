@@ -1,0 +1,41 @@
+import {Hero, PopularProducts, SuperQuality, Services, SpecialOffer, CustomerReviews, Subscribe, Footer} from './sections';
+import Nav from './components/Nav';
+
+const App = () => (
+  <div className="relative bg-primary-white">
+    <Nav />
+    <section className="xl:padding-l wide:padding-r padding-b">
+      <Hero />
+    </section>
+
+    <section className="padding">
+      <PopularProducts />
+    </section>
+
+    <section className="padding">
+      <SuperQuality />
+    </section>
+
+    <section className="padding-x py-10">
+      <Services />
+    </section>
+
+    <section className="padding">
+      <SpecialOffer />
+    </section>
+    
+    <section className="bg-primary-black padding">
+      <CustomerReviews />
+    </section>
+    
+    <section className="padding-x sm:py-32 py-16 w-full">
+      <Subscribe />
+    </section>
+    
+    <section className="bg-primary-black padding-x padding-t pb8">
+      <Footer />
+    </section>
+  </div>
+);
+
+export default App;
